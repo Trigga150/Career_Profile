@@ -3,112 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechCrafted - My IT Portfolio</title>
+  <title>Thandokuhle Alex Nkosi - Neon Nexus</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      background: #0a0a0f;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
       margin: 0;
-      background-color: #0d1117;
-      color: #c9d1d9;
     }
     header {
-      background-color: #161b22;
-      padding: 20px;
       text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(270deg, #0ff, #f0f, #0ff);
+      background-size: 600% 600%;
+      animation: gradientShift 10s ease infinite;
     }
     header h1 {
-      color: #58a6ff;
+      font-size: 3em;
+      color: #0ff;
+      text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
     }
-    nav {
-      margin-top: 10px;
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
-    nav a {
-      color: #c9d1d9;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      color: #58a6ff;
-    }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .skills, .projects {
+    .skills {
       display: flex;
+      justify-content: center;
       gap: 20px;
-      flex-wrap: wrap;
+      padding: 50px;
     }
     .card {
-      background-color: #161b22;
+      background: #111;
       padding: 20px;
-      border-radius: 8px;
-      flex: 1;
-      min-width: 250px;
+      border-radius: 10px;
+      color: #0ff;
+      box-shadow: 0 0 15px #0ff;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #f0f;
     }
     footer {
-      background-color: #161b22;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      background: #111;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>TechCrafted</h1>
-    <p>Building smarter systems, one line of code at a time</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Thandokuhle Alex Nkosi</h1>
+    <p>Software Engineer | Website Developer | Game Creator</p>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m an IT professional passionate about coding, problem-solving, and creating impactful solutions.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card">💻 HTML, CSS, JavaScript</div>
-      <div class="card">⚙️ Python & Automation</div>
-      <div class="card">☁️ Cloud & DevOps</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>A responsive personal site showcasing my IT skills.</p>
-      </div>
-      <div class="card">
-        <h3>Automation Script</h3>
-        <p>Python script to streamline repetitive tasks.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="blog">
-    <h2>Blog</h2>
-    <p>Coming soon: tutorials, insights, and IT trends.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  <section class="skills">
+    <div class="card">💻 Software Engineering</div>
+    <div class="card">🌐 Web Development</div>
+    <div class="card">🎮 Game Development</div>
+    <div class="card">☁️ IT Systems</div>
   </section>
 
   <footer>
-    <p>&copy; 2026 TechCrafted | Designed Thandokuhle Nkosi / Maniacal Trigga</p>
+    <p>Diploma in Information Technology - Central University of Technology</p>
+    <p>© 2026 Neon Nexus | Designed by Thandokuhle Alex Nkosi</p>
   </footer>
 </body>
 </html>
