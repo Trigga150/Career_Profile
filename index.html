@@ -4,35 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thandokuhle Alex Nkosi - Neon Nexus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #0a0a0f;
-      color: #fff;
-      font-family: 'Orbitron', sans-serif;
       margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      background: url('cyberpunk-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
     }
     header {
       text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(270deg, #0ff, #f0f, #0ff);
-      background-size: 600% 600%;
-      animation: gradientShift 10s ease infinite;
+      padding: 120px 20px;
+      background: rgba(0,0,0,0.7);
     }
     header h1 {
       font-size: 3em;
       color: #0ff;
-      text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+      text-shadow: 0 0 20px #0ff, 0 0 40px #f0f;
     }
-    @keyframes gradientShift {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+    header p {
+      font-size: 1.2em;
+      text-shadow: 0 0 10px #f0f;
     }
-    .skills {
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(10,10,15,0.85);
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      text-align: center;
+      color: #0ff;
+      text-shadow: 0 0 15px #0ff;
+      margin-bottom: 30px;
+    }
+    .skills, .projects {
       display: flex;
       justify-content: center;
       gap: 20px;
-      padding: 50px;
+      flex-wrap: wrap;
     }
     .card {
       background: #111;
@@ -41,15 +55,62 @@
       color: #0ff;
       box-shadow: 0 0 15px #0ff;
       transition: transform 0.3s, box-shadow 0.3s;
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px #0ff;
     }
     .card:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       box-shadow: 0 0 30px #f0f;
+    }
+    .about-img {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px #0ff;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 10px;
+      background: #111;
+      border: none;
+      color: #0ff;
+      box-shadow: 0 0 10px #0ff;
+      border-radius: 5px;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .contact-form button {
+      padding: 12px;
+      background: #0ff;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% {box-shadow: 0 0 10px #0ff;}
+      50% {box-shadow: 0 0 30px #f0f;}
+      100% {box-shadow: 0 0 10px #0ff;}
     }
     footer {
       text-align: center;
       padding: 20px;
-      background: #111;
+      background: rgba(17,17,17,0.9);
       color: #0ff;
       text-shadow: 0 0 10px #0ff;
     }
@@ -61,15 +122,59 @@
     <p>Software Engineer | Website Developer | Game Creator</p>
   </header>
 
-  <section class="skills">
-    <div class="card">💻 Software Engineering</div>
-    <div class="card">🌐 Web Development</div>
-    <div class="card">🎮 Game Development</div>
-    <div class="card">☁️ IT Systems</div>
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="thandokuhle.jpg" alt="Thandokuhle Alex Nkosi" class="about-img">
+    <p>I am a passionate Software Engineer, Website Developer, and Game Creator with a Diploma in Information Technology from the Central University of Technology. My mission is to craft futuristic digital experiences that merge creativity, innovation, and technology.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">💻 Software Engineering</div>
+      <div class="card">🌐 Web Development</div>
+      <div class="card">🎮 Game Development</div>
+      <div class="card">☁️ Cloud & IT Systems</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="cyberweb.png" alt="CyberWeb Project">
+        <h3>CyberWeb</h3>
+        <p>A futuristic responsive website with neon aesthetics and interactive animations.</p>
+      </div>
+      <div class="card">
+        <img src="neonquest.png" alt="NeonQuest Game">
+        <h3>NeonQuest</h3>
+        <p>An indie game prototype blending storytelling with immersive gameplay.</p>
+      </div>
+      <div class="card">
+        <img src="automationhub.png" alt="Automation Hub">
+        <h3>Automation Hub</h3>
+        <p>Python-based scripts to streamline IT workflows and boost efficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>🎓 Diploma in Information Technology – Central University of Technology</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p>Diploma in Information Technology - Central University of Technology</p>
     <p>© 2026 Neon Nexus | Designed by Thandokuhle Alex Nkosi</p>
   </footer>
 </body>
